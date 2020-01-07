@@ -1,0 +1,15 @@
+[submodule "lib/pugixml"]
+	path = lib/pugixml
+	url = https://github.com/zeux/pugixml.git
+[submodule "lib/fidlib"]
+	path = lib/fidlib
+	url = https://github.com/daschuer/fidlib.git
+[submodule "lib/qm-dsp"]
+	path = lib/qm-dsp
+	url = https://github.com/c4dm/qm-dsp.git
+[submodule "lib/libsamplerate"]
+	path = lib/libsamplerate
+	url = https://github.com/libsndfile/libsamplerate.git
+[submodule "lib/vamp-plugin-sdk"]
+	path = lib/vamp-plugin-sdk
+	url = https://github.com/c4dm/vamp-plugin-sdk.git
