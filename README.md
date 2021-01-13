@@ -8,7 +8,7 @@ Refer to the [developer documentation](developer.rst) for a detailed description
 
 ## Getting Started
 
-Currently only 64 bit Linux machines are supported. Also only mp3 format input and output files are supported. The following guide has been tested using Ubuntu 20.04.
+Currently only 64 bit Linux machines are supported. Also only mp3 and m4a format input and output files are supported. The following guide has been tested using Ubuntu 20.04.
 
 ### Prerequisites
 

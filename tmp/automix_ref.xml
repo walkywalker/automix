@@ -1,75 +1,79 @@
 <?xml version="1.0"?>
 <test />
-<tune path="/home/matt/Desktop/test2/BBH044DD-020-Exile,_Mark_XTC-Obsession.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.15415873014286807">
-	<drums drum="24" drum="25" drum="30" drum="1" drum="44" drum="52" drum="62" drum="50" drum="50" drum="59" drum="46" drum="48" drum="24" drum="26" drum="44" drum="1" drum="44" drum="61" drum="63" drum="48" drum="50" drum="58" drum="47" drum="47" />
-	<drops drop_start="16" drop_end="40" drop_start="64" drop_end="88" />
+<tune path="/home/matt/Desktop/test2/LDDR168_Ego_Trippin_-_Thrill_Seekers_Remix__Original_Mix_.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.091791383428571183">
+	<drums drum="40" drum="40" drum="39" drum="22" drum="42" drum="33" drum="53" drum="47" drum="41" drum="33" drum="42" drum="33" drum="39" drum="21" drum="42" drum="35" drum="54" drum="45" drum="41" drum="34" drum="42" drum="22" />
+	<drops drop_start="16" drop_end="48" drop_start="56" drop_end="84" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-014-L-Side,_Sl8r-Look_at_U.mp3" analysis_success="true" original_tempo="87" original_start_time="0.15380405048275836">
-	<drums drum="50" drum="42" drum="24" drum="4" drum="65" drum="59" drum="68" drum="68" drum="73" drum="62" drum="44" drum="58" drum="1" drum="7" drum="76" drum="72" drum="72" drum="69" drum="62" drum="64" drum="65" drum="60" />
-	<drops drop_start="16" drop_end="48" drop_start="56" drop_end="72" />
-</tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-005-Bou-Music_Takes_Me_Higher.mp3" analysis_success="true" original_tempo="86" original_start_time="0.022153509674417732">
-	<drums drum="43" drum="21" drum="56" drum="45" drum="57" drum="37" drum="53" drum="48" drum="54" drum="35" drum="40" drum="14" drum="56" drum="45" drum="55" drum="38" drum="55" drum="46" drum="53" drum="31" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-005-Bou-Music_Takes_Me_Higher.mp3" analysis_success="true" original_tempo="86" original_start_time="0.0057292093953488221">
+	<drums drum="43" drum="20" drum="56" drum="45" drum="57" drum="37" drum="53" drum="48" drum="54" drum="35" drum="41" drum="13" drum="56" drum="45" drum="56" drum="37" drum="55" drum="46" drum="53" drum="32" />
 	<drops drop_start="8" drop_end="20" drop_start="24" drop_end="40" drop_start="48" drop_end="60" drop_start="64" drop_end="80" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-003-Stompz-Broken_Hardware.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.14593877542857137">
-	<drums drum="42" drum="38" drum="23" drum="6" drum="38" drum="38" drum="38" drum="36" drum="36" drum="35" drum="38" drum="36" drum="42" drum="36" drum="24" drum="8" drum="38" drum="37" drum="39" drum="37" drum="36" drum="35" drum="38" drum="34" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-020-Exile,_Mark_XTC-Obsession.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.13393877557143019">
+	<drums drum="24" drum="25" drum="30" drum="1" drum="44" drum="52" drum="62" drum="50" drum="50" drum="59" drum="46" drum="48" drum="24" drum="26" drum="44" drum="1" drum="44" drum="61" drum="63" drum="48" drum="50" drum="58" drum="47" drum="47" drum="1" />
+	<drops drop_start="16" drop_end="40" drop_start="64" drop_end="88" />
+</tune>
+<tune path="/home/matt/Desktop/test2/BBH044DD-018-Dave_Owen,_RMS-Trust_One.mp3" analysis_success="true" original_tempo="86" original_start_time="0.14114644339534876">
+	<drums drum="55" drum="63" drum="59" drum="54" drum="60" drum="63" drum="60" drum="59" drum="96" drum="91" drum="94" drum="91" drum="60" drum="63" drum="60" drum="56" drum="58" drum="63" drum="59" drum="57" drum="91" drum="88" drum="97" drum="78" />
 	<drops drop_start="16" drop_end="48" drop_start="64" drop_end="96" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-008-Beat_Merchants-Bionic_Funk.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.17379365100002031">
-	<drums drum="0" drum="0" drum="6" drum="6" drum="29" drum="28" drum="20" drum="27" drum="26" drum="32" drum="18" drum="22" drum="5" drum="27" drum="29" drum="26" drum="20" drum="28" drum="27" drum="33" drum="18" drum="20" drum="22" drum="20" drum="55" drum="27" />
-	<drops drop_start="16" drop_end="48" drop_start="56" drop_end="92" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-014-L-Side,_Sl8r-Look_at_U.mp3" analysis_success="true" original_tempo="87" original_start_time="0.13702744537931055">
+	<drums drum="50" drum="42" drum="25" drum="3" drum="65" drum="59" drum="68" drum="68" drum="73" drum="63" drum="43" drum="59" drum="0" drum="7" drum="76" drum="72" drum="72" drum="70" drum="61" drum="64" drum="65" drum="61" />
+	<drops drop_start="16" drop_end="48" drop_start="56" drop_end="72" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-018-Dave_Owen,_RMS-Trust_One.mp3" analysis_success="true" original_tempo="86" original_start_time="0.15612102509302278">
-	<drums drum="56" drum="63" drum="59" drum="54" drum="60" drum="63" drum="60" drum="59" drum="96" drum="91" drum="94" drum="91" drum="60" drum="63" drum="60" drum="56" drum="58" drum="63" drum="59" drum="57" drum="91" drum="88" drum="97" drum="77" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-002-Lupo-Rude.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.12952380957142606">
+	<drums drum="4" drum="4" drum="27" drum="20" drum="35" drum="30" drum="31" drum="27" drum="34" drum="33" drum="29" drum="26" drum="0" drum="2" drum="24" drum="18" drum="31" drum="29" drum="31" drum="27" drum="34" drum="30" drum="29" drum="25" />
 	<drops drop_start="16" drop_end="48" drop_start="64" drop_end="96" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-013-Command_Strange-No_Reason.mp3" analysis_success="true" original_tempo="87" original_start_time="0.17295488337930998">
-	<drums drum="86" drum="76" drum="75" drum="50" drum="44" drum="42" drum="35" drum="38" drum="40" drum="36" drum="54" drum="37" drum="1" drum="15" drum="62" drum="14" drum="43" drum="47" drum="35" drum="41" drum="41" drum="39" drum="55" drum="44" />
-	<drops drop_start="16" drop_end="48" drop_start="64" drop_end="96" />
-</tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-016-Alibi-Sentinel.mp3" analysis_success="true" original_tempo="86" original_start_time="0.10868111609302306">
-	<drums drum="30" drum="32" drum="62" drum="49" drum="64" drum="62" drum="64" drum="63" drum="63" drum="56" drum="61" drum="58" drum="62" drum="54" drum="17" drum="14" drum="58" drum="62" drum="57" drum="62" drum="61" drum="64" drum="59" drum="63" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-016-Alibi-Sentinel.mp3" analysis_success="true" original_tempo="86" original_start_time="0.090266150093023134">
+	<drums drum="30" drum="32" drum="62" drum="49" drum="64" drum="62" drum="64" drum="63" drum="63" drum="56" drum="61" drum="58" drum="62" drum="55" drum="16" drum="14" drum="58" drum="62" drum="57" drum="62" drum="61" drum="64" drum="59" drum="64" />
 	<drops drop_start="16" drop_end="60" drop_start="64" drop_end="96" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-002-Lupo-Rude.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.14793877557142776">
-	<drums drum="4" drum="4" drum="27" drum="20" drum="35" drum="30" drum="31" drum="27" drum="34" drum="33" drum="29" drum="25" drum="1" drum="2" drum="24" drum="18" drum="31" drum="29" drum="31" drum="27" drum="34" drum="30" drum="29" drum="24" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-013-Command_Strange-No_Reason.mp3" analysis_success="true" original_tempo="87" original_start_time="0.15687317258620681">
+	<drums drum="86" drum="76" drum="75" drum="50" drum="45" drum="41" drum="35" drum="38" drum="40" drum="36" drum="54" drum="38" drum="0" drum="15" drum="62" drum="14" drum="43" drum="47" drum="36" drum="40" drum="42" drum="38" drum="55" drum="45" />
 	<drops drop_start="16" drop_end="48" drop_start="64" drop_end="96" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-011-Paul_T_and_Edward_Oberon-Bowes.mp3" analysis_success="true" original_tempo="88" original_start_time="0.12117274818181822">
-	<drums drum="16" drum="13" drum="17" drum="13" drum="31" drum="44" drum="76" drum="66" drum="66" drum="63" drum="70" drum="65" drum="58" drum="53" drum="16" drum="32" drum="34" drum="45" drum="75" drum="64" drum="63" drum="64" drum="74" drum="78" drum="81" drum="80" drum="1" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-011-Paul_T_and_Edward_Oberon-Bowes.mp3" analysis_success="true" original_tempo="88" original_start_time="0.10545640027272518">
+	<drums drum="16" drum="14" drum="16" drum="14" drum="30" drum="44" drum="76" drum="66" drum="66" drum="63" drum="70" drum="66" drum="57" drum="53" drum="16" drum="32" drum="34" drum="45" drum="75" drum="64" drum="63" drum="64" drum="74" drum="78" drum="81" drum="81" drum="1" />
 	<drops drop_start="24" drop_end="56" drop_start="72" drop_end="96" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-004-KY-Powertrip.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.18176870742857132">
-	<drums drum="36" drum="33" drum="21" drum="22" drum="43" drum="35" drum="51" drum="41" drum="35" drum="32" drum="49" drum="40" drum="42" drum="35" drum="26" drum="26" drum="44" drum="35" drum="49" drum="40" drum="35" drum="32" drum="47" drum="41" drum="42" drum="35" />
-	<drops drop_start="16" drop_end="60" drop_start="64" drop_end="104" />
-</tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-017-Stompz-Chained_Up.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.11498412657152135">
-	<drums drum="3" drum="2" drum="58" drum="53" drum="53" drum="31" drum="46" drum="52" drum="47" drum="29" drum="51" drum="54" drum="51" drum="31" drum="59" drum="51" drum="50" drum="32" drum="49" drum="51" drum="47" drum="28" drum="50" drum="55" drum="46" drum="32" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-017-Stompz-Chained_Up.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.096950113285804718">
+	<drums drum="3" drum="1" drum="59" drum="52" drum="54" drum="31" drum="46" drum="51" drum="48" drum="28" drum="52" drum="53" drum="52" drum="31" drum="59" drum="50" drum="51" drum="32" drum="49" drum="50" drum="48" drum="28" drum="50" drum="54" drum="47" drum="32" />
 	<drops drop_start="24" drop_end="36" drop_start="40" drop_end="52" drop_start="72" drop_end="84" drop_start="88" drop_end="100" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-006-Kumarachi-Old_Skool_Style.mp3" analysis_success="true" original_tempo="87" original_start_time="0.1922723433793101">
-	<drums drum="51" drum="59" drum="53" drum="53" drum="26" drum="12" drum="55" drum="48" drum="61" drum="42" drum="62" drum="45" drum="62" drum="44" drum="49" drum="54" drum="31" drum="11" drum="57" drum="50" drum="63" drum="44" drum="59" drum="47" drum="65" drum="43" />
-	<drops drop_start="24" drop_end="40" drop_start="48" drop_end="56" drop_start="72" drop_end="88" drop_start="96" drop_end="104" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-004-KY-Powertrip.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.15474376442857107">
+	<drums drum="36" drum="34" drum="21" drum="22" drum="42" drum="36" drum="50" drum="42" drum="35" drum="32" drum="48" drum="40" drum="42" drum="36" drum="26" drum="26" drum="43" drum="36" drum="48" drum="41" drum="35" drum="32" drum="46" drum="41" drum="42" drum="36" />
+	<drops drop_start="16" drop_end="60" drop_start="64" drop_end="104" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-019-Beat_Merchants-King_Kong.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.24211337842882086">
-	<drums drum="3" drum="2" drum="34" drum="17" drum="2" drum="54" drum="55" drum="52" drum="47" drum="35" drum="34" drum="34" drum="33" drum="29" drum="2" drum="19" drum="2" drum="55" drum="52" drum="53" drum="53" drum="34" drum="34" drum="34" drum="35" drum="31" drum="33" drum="24" drum="0" drum="1" drum="1" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-001-Nectax-Blindspot.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.21931519314288361">
+	<drums drum="10" drum="35" drum="0" drum="0" drum="3" drum="23" drum="38" drum="40" drum="41" drum="58" drum="42" drum="41" drum="39" drum="49" drum="1" drum="2" drum="0" drum="0" drum="1" drum="23" drum="38" drum="41" drum="40" drum="56" drum="42" drum="41" drum="39" drum="48" />
+	<drops drop_start="24" drop_end="36" drop_start="40" drop_end="56" drop_start="80" drop_end="92" drop_start="96" drop_end="112" />
+</tune>
+<tune path="/home/matt/Desktop/test2/BBH044DD-019-Beat_Merchants-King_Kong.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.22048752799983118">
+	<drums drum="3" drum="1" drum="34" drum="18" drum="1" drum="54" drum="55" drum="52" drum="48" drum="34" drum="34" drum="34" drum="33" drum="30" drum="1" drum="20" drum="1" drum="55" drum="52" drum="53" drum="53" drum="34" drum="34" drum="34" drum="35" drum="31" drum="33" drum="25" drum="0" drum="1" drum="1" />
 	<drops drop_start="20" drop_end="56" drop_start="68" drop_end="112" />
 </tune>
 <tune path="/home/matt/Desktop/test2/BBH044DD-015-Sl8r-What_U_Need.mp3" analysis_success="false" />
-<tune path="/home/matt/Desktop/test2/BBH044DD-007-Sl8r-Roundabout.mp3" analysis_success="true" original_tempo="87" original_start_time="0.039537649379309814">
-	<drums drum="66" drum="57" drum="65" drum="59" drum="61" drum="57" drum="67" drum="30" drum="61" drum="62" drum="70" drum="71" drum="66" drum="40" drum="68" drum="69" drum="71" drum="76" drum="65" drum="42" drum="9" drum="0" drum="52" drum="60" drum="70" drum="68" drum="62" drum="35" drum="65" drum="69" drum="72" drum="71" drum="55" drum="38" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-007-Sl8r-Roundabout.mp3" analysis_success="true" original_tempo="87" original_start_time="0.021415200379308885">
+	<drums drum="66" drum="58" drum="65" drum="59" drum="61" drum="57" drum="66" drum="31" drum="61" drum="62" drum="70" drum="71" drum="66" drum="40" drum="68" drum="69" drum="71" drum="76" drum="65" drum="42" drum="9" drum="0" drum="52" drum="60" drum="70" drum="68" drum="62" drum="35" drum="65" drum="69" drum="72" drum="71" drum="55" drum="38" />
 	<drops drop_start="32" drop_end="80" drop_start="88" drop_end="136" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-012-Dr_Meaker,_Danny_Wheeler-Root,_Leaf_and_Stem_feat_MC_Spyda.mp3" analysis_success="true" original_tempo="87" original_start_time="0.14654789227585052">
-	<drums drum="16" drum="16" drum="11" drum="17" drum="14" drum="21" drum="35" drum="35" drum="38" drum="46" drum="40" drum="40" drum="30" drum="26" drum="48" drum="36" drum="53" drum="47" drum="45" drum="42" drum="30" drum="31" drum="8" drum="8" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-012-Dr_Meaker,_Danny_Wheeler-Root,_Leaf_and_Stem_feat_MC_Spyda.mp3" analysis_success="true" original_tempo="87" original_start_time="0.13075072358620687">
+	<drums drum="16" drum="16" drum="11" drum="17" drum="15" drum="20" drum="35" drum="35" drum="38" drum="46" drum="40" drum="40" drum="30" drum="26" drum="48" drum="36" drum="53" drum="47" drum="45" drum="42" drum="30" drum="32" drum="8" drum="8" />
 	<drops drop_start="24" drop_end="88" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-010-DJ_Hybrid-Bonebreaker.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.23948299300000853">
-	<drums drum="7" drum="7" drum="15" drum="33" drum="41" drum="36" drum="41" drum="36" drum="40" drum="37" drum="41" drum="36" drum="7" drum="7" drum="15" drum="31" drum="41" drum="36" drum="41" drum="36" drum="40" drum="36" drum="41" drum="36" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-003-Stompz-Broken_Hardware.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.12471882042857108">
+	<drums drum="42" drum="38" drum="24" drum="5" drum="38" drum="38" drum="38" drum="36" drum="36" drum="35" drum="38" drum="36" drum="42" drum="36" drum="25" drum="7" drum="38" drum="37" drum="39" drum="37" drum="36" drum="35" drum="38" drum="35" />
 	<drops drop_start="16" drop_end="48" drop_start="64" drop_end="96" />
 </tune>
-<tune path="/home/matt/Desktop/test2/BBH044DD-001-Nectax-Blindspot.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.25072108885714994">
-	<drums drum="10" drum="34" drum="0" drum="0" drum="4" drum="23" drum="38" drum="40" drum="41" drum="58" drum="42" drum="41" drum="39" drum="48" drum="2" drum="1" drum="0" drum="0" drum="2" drum="23" drum="38" drum="41" drum="40" drum="56" drum="42" drum="41" drum="39" drum="47" />
-	<drops drop_start="24" drop_end="36" drop_start="40" drop_end="56" drop_start="80" drop_end="92" drop_start="96" drop_end="112" />
+<tune path="/home/matt/Desktop/test2/BBH044DD-010-DJ_Hybrid-Bonebreaker.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.22137641728571422">
+	<drums drum="7" drum="7" drum="15" drum="33" drum="41" drum="36" drum="41" drum="36" drum="40" drum="37" drum="41" drum="36" drum="7" drum="7" drum="15" drum="31" drum="41" drum="36" drum="41" drum="36" drum="40" drum="36" drum="41" drum="37" />
+	<drops drop_start="16" drop_end="48" drop_start="64" drop_end="96" />
+</tune>
+<tune path="/home/matt/Desktop/test2/BBH044DD-008-Beat_Merchants-Bionic_Funk.mp3" analysis_success="true" original_tempo="87.5" original_start_time="0.15346031700008989">
+	<drums drum="1" drum="0" drum="6" drum="6" drum="28" drum="28" drum="21" drum="26" drum="26" drum="32" drum="18" drum="23" drum="4" drum="28" drum="28" drum="26" drum="21" drum="27" drum="27" drum="33" drum="18" drum="21" drum="21" drum="20" drum="55" drum="28" />
+	<drops drop_start="16" drop_end="48" drop_start="56" drop_end="92" />
+</tune>
+<tune path="/home/matt/Desktop/test2/BBH044DD-006-Kumarachi-Old_Skool_Style.mp3" analysis_success="true" original_tempo="87" original_start_time="0.17675987137931015">
+	<drums drum="52" drum="59" drum="52" drum="54" drum="26" drum="12" drum="54" drum="48" drum="61" drum="43" drum="61" drum="46" drum="61" drum="45" drum="48" drum="55" drum="31" drum="11" drum="56" drum="50" drum="63" drum="44" drum="59" drum="48" drum="64" drum="44" />
+	<drops drop_start="24" drop_end="40" drop_start="48" drop_end="56" drop_start="72" drop_end="88" drop_start="96" drop_end="104" />
 </tune>

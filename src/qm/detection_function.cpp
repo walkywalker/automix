@@ -278,10 +278,16 @@ double detection_function::broadband(unsigned int length, double *src)
     }
     for (unsigned int i = 0; i < length; ++i) {
         double sqrmag = src[i] * src[i];
-        if (m_magHistory[i] > 0.0 && sqrmag > 0.0) {
-            double diff = 10.0 * log10(sqrmag / m_magHistory[i]);
-            if (diff > m_dbRise) val = val + 1;
-        }
+        // if (m_magHistory[i] > 0.0 && sqrmag > 0.0) {
+        if (sqrmag <= 0.0) {
+            sqrmag = 0.001;
+        } else if (m_magHistory[i] <= 0.0) {
+            m_magHistory[i] = 0.001;
+         }
+
+        double diff = 10.0 * log10(sqrmag / m_magHistory[i]);
+        if (diff > m_dbRise) val = val + 1;
+        // }
         m_magHistory[i] = sqrmag;
     }
 

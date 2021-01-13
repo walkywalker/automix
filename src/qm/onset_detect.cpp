@@ -443,6 +443,9 @@ onset_detector::getRemainingFeatures()
         ppSrc[i] = m_d->dfOutput[i];
     }
 
+    ppSrc[1] = (ppSrc[0] + ppSrc[1])/2;
+    ppSrc[0] = 0.0;
+
     vector<int> onsets;
     peakPicker.process(ppSrc, ppParams.length, onsets);
 

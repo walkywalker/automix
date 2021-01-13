@@ -130,7 +130,7 @@ std::vector<std::shared_ptr<tune>> get_tunes(std::vector<std::string> track_path
 std::vector<std::string> get_track_paths(std::string track_dir_path, int max_num_tracks) {
     std::vector<std::string> paths;
     for (const auto & entry : std::filesystem::directory_iterator(track_dir_path)) {
-        if (entry.path().extension() == ".mp3") {    // only support mp3 for now
+        if (entry.path().extension() == ".mp3" || entry.path().extension() == ".m4a") {    // only support mp3 and m4a for now
             paths.push_back(entry.path());
         }
     }
