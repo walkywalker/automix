@@ -6,6 +6,7 @@ class dj {
 	private:
 		std::vector<std::shared_ptr<tune>> m_tunes;
 		std::deque<action_t> m_actions;
+		int m_bar = 0;
 	public:
 		std::string m_path;
 		dj(std::vector<std::shared_ptr<tune>> tunes);

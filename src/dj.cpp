@@ -48,6 +48,7 @@ void dj::mix(double tempo, int num_channels, int double_drop_prob, int breakdown
 
         current_tune = next_tune;
         t_time += bar_to_start*4*(60.0/tempo);
+        m_bar+=bar_to_start;
 
         ch_num = (ch_num + 1) % num_channels;
     }
@@ -64,7 +65,10 @@ void dj::mix(double tempo, int num_channels, int double_drop_prob, int breakdown
 int dj::normal_mix(std::shared_ptr<tune> current_tune, std::shared_ptr<tune> next_tune) {
     int current_tune_transition_bar = current_tune->get_drop_bars(0).second;
     int bar_to_start = current_tune_transition_bar - next_tune->get_drop_bars(0).first;
-    // assert(bar_to_start > 0);
+
+    if (bar_to_start < (-1*m_bar)) {
+        bar_to_start = -1*m_bar;
+    }
     next_tune->set_volume_ramp(next_tune->get_time_at_bar(0), next_tune->get_time_at_bar(4), 0.0, 1.0, 16);
     next_tune->set_lpf_gain(0.0, next_tune->get_time_at_bar(next_tune->get_drop_bars(0).first));
 
@@ -133,6 +137,10 @@ int dj::breakdown_mix(std::shared_ptr<tune> current_tune, std::shared_ptr<tune> 
     int current_tune_transition_bar = current_tune->get_drop_bars(0).second;
     int bar_to_start = current_tune_transition_bar - next_tune_start_bar;
 
+    if (bar_to_start < (-1*m_bar)) {
+        bar_to_start = -1*m_bar;
+    }
+
     next_tune->set_volume_ramp(next_tune->get_time_at_bar(0), next_tune->get_time_at_bar(4), 0.0, 1.0, 16);
     next_tune->set_lpf_gain(0.0, next_tune->get_time_at_bar(next_tune_start_bar));
 
@@ -144,6 +152,10 @@ int dj::breakdown_mix(std::shared_ptr<tune> current_tune, std::shared_ptr<tune> 
 int dj::double_drop_mix(std::shared_ptr<tune> current_tune, std::shared_ptr<tune> next_tune) {
     int current_tune_transition_bar = current_tune->get_drop_bars(0).first + 16;    // todo look for a good spot rather than hard code
     int bar_to_start = current_tune_transition_bar - next_tune->get_drop_bars(0).first;
+
+    if (bar_to_start < (-1*m_bar)) {
+        bar_to_start = -1*m_bar;
+    }
 
     next_tune->set_volume_ramp(next_tune->get_drop_bars(0).first - 8, next_tune->get_drop_bars(0).first - 4, 0.0, 1.0, 16);
     next_tune->set_lpf_gain(0.0, next_tune->get_time_at_bar(next_tune->get_drop_bars(0).first));    // todo look at drums and maybe switch base earlier
