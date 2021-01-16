@@ -41,8 +41,15 @@ void analyze_track(std::vector<std::shared_ptr<tune>> &tune_list, std::vector<st
     }
 }
 
-pugi::xml_node get_node_from_path(pugi::xml_document &doc, std::string path) {
-    std::string xpath = "/tune[@path='" + path + "']";  // TODO strip special charachters
+pugi::xml_node get_node_from_path(pugi::xml_document &doc, const std::string &path) {
+    std::string legal_path = path;
+    std::string illegal_chars = "':/*@()[]+-";
+ 
+    for (char c: illegal_chars) {
+        legal_path.erase(std::remove(legal_path.begin(), legal_path.end(), c), legal_path.end());
+    }
+
+    std::string xpath = "/tune[@path='" + legal_path + "']";
     std::cout << xpath << std::endl;
     pugi::xpath_node_set path_match = doc.select_nodes(xpath.c_str());
     
