@@ -13,6 +13,15 @@ void dj::mix(double tempo, int num_channels, int double_drop_prob, int breakdown
     std::vector<std::shared_ptr<tune>> tunes = m_tunes;
     std::random_shuffle(tunes.begin(), tunes.end());
 
+    // get mean volume
+    double total = 0;
+    int num = 0;
+    for (auto tune : tunes) {
+        total += tune->get_original_volume();
+        num++;
+    }
+    double output_vol = total/num;
+
     // get breakdown tunes
     std::set<std::string> breakdown_tunes = position_breakdown_transitions(tunes, breakdown_prob);
 
@@ -39,7 +48,7 @@ void dj::mix(double tempo, int num_channels, int double_drop_prob, int breakdown
             bar_to_start = normal_mix(current_tune, next_tune); // switch to drop
         }
 
-        current_tune->map_actions(ch_num, t_time, tempo);
+        current_tune->map_actions(ch_num, t_time, tempo, output_vol/current_tune->get_original_volume());
         assert(current_tune->get_actions().size() > 0);
         auto it_actions = current_tune->get_actions();
         for (auto action_it = it_actions.begin(); action_it != it_actions.end(); action_it++) {
@@ -53,7 +62,7 @@ void dj::mix(double tempo, int num_channels, int double_drop_prob, int breakdown
         ch_num = (ch_num + 1) % num_channels;
     }
 
-    current_tune->map_actions(ch_num, t_time, tempo);
+    current_tune->map_actions(ch_num, t_time, tempo, output_vol/current_tune->get_original_volume());
     assert(current_tune->get_actions().size() > 0);
     auto it_actions = current_tune->get_actions();
     for (auto action_it = it_actions.begin(); action_it != it_actions.end(); action_it++) {

@@ -17,6 +17,7 @@ class analyzer {
 	private:
 		track m_track;
 		double m_input_tempo;
+		double m_vol;
 		std::ofstream m_analysis_log_file;
 		std::vector<detector_helper> m_processes;
 		std::vector<double> m_beat_features;

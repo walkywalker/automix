@@ -96,7 +96,7 @@ std::shared_ptr<tune> analyzer::construct_tune(const double tempo, const double 
 	}
 	assert(drops.size() > 0);
 
-	return std::make_shared<tune>(m_track.get_path(), tempo, first_beat, drops, four_bar_drum_content, true);
+	return std::make_shared<tune>(m_track.get_path(), tempo, first_beat, m_vol, drops, four_bar_drum_content, true);
 }
 
 void analyzer::open_log_file() {
@@ -207,6 +207,7 @@ int analyzer::process() {
 	run();
 
 	m_bass_content = bass_analyzer.get_bass_content();
+	m_vol = bass_analyzer.get_vol();
 	m_beat_features = get_timestamps(beat_analyzer.getRemainingFeatures()[0]);
 
 	auto o_features = detector.getRemainingFeatures()[0];

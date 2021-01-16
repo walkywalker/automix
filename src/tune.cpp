@@ -6,9 +6,10 @@
 
 tune::tune(std::string track_path): m_path(track_path), m_analysis_success(false) {}
 
-tune::tune(std::string track_path, double tempo, double track_start_time, std::vector<std::pair<int, int>> drops, std::vector<int> four_bar_drum_content, bool analysis_success):
+tune::tune(std::string track_path, double tempo, double track_start_time, double volume, std::vector<std::pair<int, int>> drops, std::vector<int> four_bar_drum_content, bool analysis_success):
 	m_path(track_path),
 	m_original_tempo(tempo),
+	m_original_volume(volume),
 	m_drops(drops),
 	m_track_start_time(track_start_time),
 	m_drums(four_bar_drum_content),
@@ -22,6 +23,7 @@ tune::tune(pugi::xml_node tune_node) {
 		if (m_analysis_success) {
 			m_original_tempo = tune_node.attribute("original_tempo").as_double();
 			m_track_start_time = tune_node.attribute("original_start_time").as_double();
+			m_original_volume = tune_node.attribute("original_volume").as_double();
 
 			int tmp = 0;
 			for (pugi::xml_attribute_iterator ait = tune_node.child("drops").attributes_begin(); ait != tune_node.child("drops").attributes_end(); ++ait) {
@@ -67,6 +69,7 @@ int tune::populate_xml_node(pugi::xml_node tune_node) {
 	if (m_analysis_success) {
 		tune_node.append_attribute("original_tempo") = m_original_tempo;
 		tune_node.append_attribute("original_start_time") = m_track_start_time;
+		tune_node.append_attribute("original_volume") = m_original_volume;
 
 		pugi::xml_node drums_node = tune_node.append_child("drums");
 		for (auto drum: m_drums) {
@@ -92,6 +95,10 @@ double tune::get_original_start_time() {
 
 double tune::get_original_tempo() {
 	return m_original_tempo;
+}
+
+double tune::get_original_volume() {
+	return m_original_volume;
 }
 
 std::deque<action_t> tune::get_actions() {
@@ -149,7 +156,7 @@ void tune::pause(double time) {
 	m_actions.push_back(action);
 }
 
-void tune::map_actions(int channel, double global_beat_start_time, double set_tempo) {
+void tune::map_actions(int channel, double global_beat_start_time, double set_tempo, double volume_ratio) {
 		m_set_tempo = set_tempo;
 		m_global_beat_start_time = global_beat_start_time;
 		action_t action;
@@ -163,5 +170,8 @@ void tune::map_actions(int channel, double global_beat_start_time, double set_te
 	for (auto it = m_actions.begin(); it != m_actions.end(); it++) {
 		it->time = ((it->time - m_track_start_time)*(m_original_tempo/set_tempo)) + global_beat_start_time;
 		it->channel = channel;
+		if (it->control == VOL) {
+			it->value *= volume_ratio;
+		}
 	}
 }

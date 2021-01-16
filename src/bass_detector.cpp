@@ -1,4 +1,6 @@
 #include "bass_detector.h"
+#include <cmath>
+#include <algorithm>
 
 bass_detector::bass_detector(): m_bp(bessel()) {};
 
@@ -15,20 +17,40 @@ bool bass_detector::initialise(int step_size, int window_size) {
 }
 	
 Vamp::Plugin::FeatureSet bass_detector::process(const float *const *inputBuffers, Vamp::RealTime timestamp) {
-	double bass_temp = 0;
 	for (int i = 0; i < m_window_size*2; i++) {
 		m_buffer[i] = inputBuffers[0][i/2];	// back to stereo
 	}
+	m_vol.push_back(get_rms());
 	m_bp.process_samples(m_buffer, m_window_size*2);
-	for (int i = 0; i < (m_window_size*2)-1; i=i+2) {
-		bass_temp += std::abs((m_buffer[i] + m_buffer[i+1])*0.5);
-	}
-	m_bass.push_back(bass_temp);
+
+	m_bass.push_back(get_rms());
 
 	Vamp::Plugin::FeatureSet returnFeatures;
 	return returnFeatures;
 }
 
+double bass_detector::get_rms() {
+	double rms = 0;
+	for (int i = 0; i < (m_window_size*2)-1; i=i+2) {
+		rms += pow(std::abs((m_buffer[i] + m_buffer[i+1])*0.5), 2);
+	}
+	return pow(rms/(m_window_size*2), 0.5);
+}
+
 std::vector<double> bass_detector::get_bass_content() {
 	return m_bass;
+}
+
+double bass_detector::get_vol() {
+	auto vol_max = std::max_element(m_vol.begin(), m_vol.end());
+	double threshold = 0.8 * (*vol_max);
+	double total_vol = 0;
+	int num_vols = 0;
+	for (auto vol : m_vol) {
+		if (vol > threshold) {
+			total_vol += vol;
+			num_vols++;
+		}
+	}
+	return total_vol/num_vols;
 }

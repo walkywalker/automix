@@ -7,6 +7,7 @@ class tune {
 	private:
 		std::deque<action_t> m_actions;
 		double m_original_tempo;
+		double m_original_volume;
 		double m_set_tempo;
 		double m_global_beat_start_time;
 		double m_track_start_time;
@@ -15,7 +16,7 @@ class tune {
 		std::vector<int> m_drums;
 		void set_initial_controls();
 	public:
-		tune(std::string track_path, double tempo, double track_start_time, std::vector<std::pair<int, int>> drops, std::vector<int> four_bar_drum_content, bool analysis_success);
+		tune(std::string track_path, double tempo, double track_start_time, double volume, std::vector<std::pair<int, int>> drops, std::vector<int> four_bar_drum_content, bool analysis_success);
 		tune(pugi::xml_node tune_node);
 		tune(std::string track_path);
 		std::string m_path;
@@ -24,6 +25,7 @@ class tune {
 		std::deque<action_t> get_actions();
 		double get_original_start_time();
 		double get_original_tempo();
+		double get_original_volume();
 		double get_time_at_beat(int beat_idx);
 		double get_time_at_bar(int bar_idx);
 		double get_mapped_time_at_bar(int bar_idx);
@@ -33,7 +35,7 @@ class tune {
 		void set_volume_ramp(double start_time, double end_time, double start_volume, double end_volume, int num_steps);
 		void set_lpf_gain(double gain, double time);
 		void pause(double time);
-		void map_actions(int channel, double global_beat_start_time, double set_tempo);
+		void map_actions(int channel, double global_beat_start_time, double set_tempo, double volume_ratio);
 };
 #define tune_def
 #endif
