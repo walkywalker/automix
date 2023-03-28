@@ -269,11 +269,11 @@ int main(int argc, char **argv)
     }
 
     if(in.option_exists("-ot")) {
-        output_tempo = std::stod(in.get_option("-t"));
+        output_tempo = std::stod(in.get_option("-ot"));
     }
 
-    if(in.option_exists("-ot")) {
-        input_tempo = std::stod(in.get_option("-t"));
+    if(in.option_exists("-it")) {
+        input_tempo = std::stod(in.get_option("-it"));
     }
 
     if(in.option_exists("-s")) {
